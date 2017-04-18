@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -15,7 +14,6 @@
 
 
   <div class="container">
-    <div id="clearALL" class="btn btn-danger">ERASE EVERYTHING</div>
 
 
     <h3>Who Laid an Egg?</h3>
@@ -24,13 +22,16 @@
     <hr/>
 
     <h3> Add to your flock:</h3>
-    <form class="form-inline well">
-
-      <div class="form-group">
+    <form class="well">
+<div class="row">
+      <div class="col-xs-8">
         <label for="henName">Name</label>
         <input type="text" class="form-control" id="henName" placeholder="Franchesca">
       </div>
-      <div id="btnAddHen" class="btn btn-primary">Add Hen</div>
+      <div class="col-xs-4">
+        <div id="btnAddHen" class="btn btn-primary" title="Add Hen"><img src="img/addHen.png"></div>
+      </div>
+          </div>
     </form>
 
     <h3>Egg Cartons</h3>
@@ -40,12 +41,16 @@
     </div>
     <br/>
     <hr/>
-    <form id="cartonForm "class="form-inline well">
-      <div class="form-group">
+    <form class="well">
+      <div class="row">
+      <div class="col-xs-8">
         <label for="cartonCapacity">Carton Size</label>
         <input type="number" class="form-control" id="cartonCapacity" placeholder="12">
       </div>
+      <div class=" col-xs-4">
       <div id="btnAddCarton" class="btn btn-primary">Add Carton</div>
+      </div>
+          </div>
     </form>
 
 
@@ -57,6 +62,9 @@
 
 
     <div style="height: 500px;"></div>
+
+    <div id="clearALL" class="btn btn-danger">ERASE EVERYTHING</div>
+
     <div class="well">
       <h2>Hens:</h2>
       <pre id="henJSON"></pre>

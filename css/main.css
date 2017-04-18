@@ -1,25 +1,105 @@
 
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+body, html {
+  background: #5C5D61 !important;
+  color: #F2F1E1;
+}
+
+.modal{
+
+}
+
+.modal-dialog, .modal-content{
+  background: #B7D9C0 !important;
+  color: #5C5D61 !important;
+}
+
+
+h1, h2, h3, h4, h5{
+  color: #F2F1E1 !important;
+}
+
+
+.btn-primary{
+  background: #B7D9C0;
+    color: #5C5D61 !important;
+  border: 0px !important;
+}
+
+.well{
+  background-color: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.15);
+}
+
+.henList{
+  background-color: rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.4);
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: scroll;
 }
 
 .btnAddEgg{
+  background: #DDE1C0 !important;
+  border: 0px;
+  color: #5C5D61 !important;
   padding: 22px;
   font-size: 2.3rem;
   height: 80px;
   display: block;
   margin: 10px 0px;
-  background:
+  position: relative;
+}
+
+.btnAddEgg img{
+  float: left;
+position: absolute;
+top: 6px;
+left: 11px;
+height: 69px;
+}
+
+
+#btnAddHen{
+  width: 90px;
+      height: 90px;
+      padding: 6px 5px 0 4px;
+}
+#btnAddHen img{
+  width: 100%;
 }
 
 .container{
   max-width: 750px;
 }
 
-.panel-body{
-  margin: 0 auto;
-  width: 300px;
+.carton{
+  position: relative;
+  display: block;
+  width: 242px;
+  border-radius: 5px;
+  margin: 16px auto 5px auto;
+  background: rgb(239, 239, 239);
+  border: 1px solid rgb(187, 179, 179);
+  z-index: 3;
+}
+
+
+.carton:after{
+  position: relative;
+     content: "";
+     height: 20px;
+     bottom: -14px;
+     left: -1px;
+     width: 242px;
+     border-radius: 0 0 5px 5px;
+     /* margin: 16px auto 5px auto; */
+     background: rgb(202, 197, 197);
+     border: 1px solid rgb(171, 165, 165);
+     display: block;
+     position: absolute;
+     z-index: -1;
+
 }
 
 .egg{
@@ -30,7 +110,7 @@ body {
   background-size: cover;
   content: "";
   position: relative;
-  margin: 6px;
+  margin: -18px 6px 6px 6px;
 }
 
 .egg.empty{

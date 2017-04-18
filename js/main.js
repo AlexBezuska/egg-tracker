@@ -5,12 +5,13 @@ var messages = {
   firstHen: "Welcome to egg tracker, to get started add a hen by adding a name and clicking the 'add Hen' button."
 };
 
-var henButtonHTML = "<div class='btnAddEgg btn btn-success' data-id='{{dataid}}' data-name='{{dataname}}'>{{henname}}</div>";
+var henButtonHTML = "<div class='btnAddEgg btn btn-default' data-id='{{dataid}}' data-name='{{dataname}}'>"+
+"<img src='img/hen.png'/>{{henname}}</div>";
 
 var cartonHTML = '<div class="col-sm-6">'+
 '<div class="panel panel-default">' +
 '<div class="panel-heading">Carton ({{id}})<br/><b>Start Date</b></br> {{datastart}}</b></div>' +
-'<div class="panel-body">{{eggs}}</div></div>'+
+'<div class="panel-body"><div class="carton">{{eggs}}</div></div></div>'+
 '</div>';
 
 var eggHTML = "<div class='egg'>{{eggID}}</div>";
@@ -34,6 +35,8 @@ $(document).ready(function() {
 
   init();
 });
+
+
 
 
 function init() {
