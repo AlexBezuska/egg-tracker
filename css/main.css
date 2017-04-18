@@ -1,0 +1,53 @@
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.btnAddEgg{
+  padding: 22px;
+  font-size: 2.3rem;
+  height: 80px;
+  display: block;
+  margin: 10px 0px;
+  background:
+}
+
+.container{
+  max-width: 750px;
+}
+
+.panel-body{
+  margin: 0 auto;
+  width: 300px;
+}
+
+.egg{
+  display:inline-block;
+  width: 28px;
+  height: 35px;
+  background-image: url('../img/egg-empty.png');
+  background-size: cover;
+  content: "";
+  position: relative;
+  margin: 6px;
+}
+
+.egg.empty{
+
+}
+
+.egg.filled{
+  background-image: url('../img/egg-filled.png');
+}
+
+
+
+
+
+
+
+
+
+
+

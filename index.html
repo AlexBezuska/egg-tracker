@@ -1,0 +1,136 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Egg Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+
+  <div class="container">
+    <div id="clearALL" class="btn btn-danger">ERASE EVERYTHING</div>
+
+
+    <h3>Who Laid an Egg?</h3>
+    <div class="henList"></div>
+    <br/>
+    <hr/>
+
+    <h3> Add to your flock:</h3>
+    <form class="form-inline well">
+
+      <div class="form-group">
+        <label for="henName">Name</label>
+        <input type="text" class="form-control" id="henName" placeholder="Franchesca">
+      </div>
+      <div id="btnAddHen" class="btn btn-primary">Add Hen</div>
+    </form>
+
+    <h3>Egg Cartons</h3>
+
+    <div class="cartonList row">
+      <!-- <div class="henListName btn btn-success">default Laid an egg!</div> -->
+    </div>
+    <br/>
+    <hr/>
+    <form id="cartonForm "class="form-inline well">
+      <div class="form-group">
+        <label for="cartonCapacity">Carton Size</label>
+        <input type="number" class="form-control" id="cartonCapacity" placeholder="12">
+      </div>
+      <div id="btnAddCarton" class="btn btn-primary">Add Carton</div>
+    </form>
+
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2017 Daydream Farm Inc.</p>
+    </footer>
+
+
+    <div style="height: 500px;"></div>
+    <div class="well">
+      <h2>Hens:</h2>
+      <pre id="henJSON"></pre>
+      <h2>Eggs:</h2>
+      <pre id="eggJSON"></pre>
+      <h2>Cartons:</h2>
+      <pre id="cartonJSON"></pre>
+    </div>
+
+
+
+
+  </div> <!-- /container -->
+
+
+  <div class="modal fade message-box" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Egg Tracker</h4>
+        </div>
+        <div class="modal-body">
+          <p class="message-text">Eggs come from chickens!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" btn btn-primary model-btn" data-dismiss="modal">Got it!</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+  <div class="modal fade carton-message-box" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">New Carton</h4>
+        </div>
+        <div class="modal-body">
+          <p>Looks like you are ready to start a new Carton!</p>
+          <form id="cartonForm "class="form-inline well">
+            <div class="form-group">
+              <label for="cartonCapacity">Carton Size</label>
+              <input type="number" class="form-control" id="cartonCapacity" placeholder="12">
+            </div>
+            <div id="btnAddCarton" class="btn btn-primary">Add Carton</div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" btn btn-primary model-btn" data-dismiss="modal">Cancel</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+  <script src="js/vendor/moment.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!-- <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script> -->
+</body>
+</html>
